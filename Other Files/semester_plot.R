@@ -2,6 +2,7 @@ require(readxl)
 require(ggplot2)
 require(plotly)
 
+setwd("~/Documents/GitHub/miles-woollacott.github.io/Other Files/")
 sem.csv<-read_excel("semester_reviews.xlsx")
 
 # Get bootstrap median and CI
@@ -9,7 +10,11 @@ sem.15<-sem.csv[,c("1", "2", "3", "4", "5")]
 sem.csv$Response.Rate<-rowSums(sem.15)/sem.csv$`Total Students`
 sem.csv$Mean<-as.matrix(sem.15)%*%1:5/(sem.csv$`Total Students`*sem.csv$Response.Rate)
 sem.csv$no.missing<-sem.csv$`Total Students`*(1-sem.csv$Response.Rate)
-sem.probs<-t(apply(sem.15, 1, function(x){x/sum(x)}))
+sem.probs<-t(apply(sem.15+1, 1, function(x){x/sum(x)}))
+
+sem.df<-as.matrix(sem.15)
+overall.mean<-mean((sem.df%*%1:5)/rowSums(sem.df))
+overall.mean
 
 sem.response<-list()
 n<-nrow(sem.csv)
