@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+	    table, th, td {
+	      border-collapse: collapse; /* keeps borders tight */
+	    }
+	    th, td {
+	      padding: 12px; /* adds padding inside cells */
+	    }
+	  </style>
 </head>
 
 <body>
@@ -18,10 +26,9 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="navbar-nav">
 					<a href="" class="nav-item nav-link active">About</a>
-					<a href="research.html" class="nav-item nav-link">Research</a>
-					<a href="education.html" class="nav-item nav-link">Education</a>
-					<a href="experience.html" class="nav-item nav-link">Work Experience</a>
-					<a href="projects.html" class="nav-item nav-link">Projects</a>
+					<a href="research.html" class="nav-item nav-link">Research and Publications</a>
+					<a href="teaching.html" class="nav-item nav-link">Teaching</a>
+					<a href="blog.html" class="nav-item nav-link">Blog</a>
 					<a href="contact.html" class="nav-item nav-link">Contact</a>
 				</div>
 			</div>
@@ -32,9 +39,66 @@
         <h1 style="color:ivory">About</h1>
         <br><br>
     </div>
-	<div class="container">
-		<p>Proof I'm not a robot.</p>
-	</div>
+    <div class="container">
+    	<h1>Education</h1>
+        <table>
+            <tr>
+                <td><img src="Images/NCSU-logo.jpeg" alt="NCSU School Logo" height="100px" width="100px"></td>
+                <td><b>PhD Student in Statistics: North Carolina State University</b>
+                	<ul>
+                		<li><i>May 2023 - Present</i></li>
+                		<li><i>Advisor</i>: Dr. Jonathan Stallrich</li>
+                		<li><b>August 2024</b>: Successfully Passed Ph.D. Qualifying Exam.</li>
+                		<li><b>September 2025</b>: Submitted Written Prelim draft (currently in review)</li>
+                	</ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Images/UVA-logo.jpeg" alt="UVA School Logo" height="100px" width="100px"></td>
+                <td><b>BS in Statistics, BA in Computer Science: University of Virginia</b>
+                	<ul>
+                		<li><i>August 2019-May 2023</i></li>
+                		<li>Cumulative GPA: 3.78 (Department GPA: 3.84)</li>
+                		<li>Had several leadership roles in the Cavalier Marching Band.</li>
+                	</ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Images/STHS-logo.jpeg" alt="Stockdale High School Logo" height="100px" width="100px"></td>
+                <td><b>High School: Stockdale High School</b>
+                	<ul>
+                		<li><i>August 2015-May 2019</i></li>
+                		<li>GPA: 3.89</li>
+                	</ul>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    <div class="container">
+    	<h1>Industry Experience</h1>
+    	<table>
+			<tr>
+                <td><img src="Images/IBM-logo.jpg" alt="IBM Logo" height="100px" width="100px"></td>
+                <td><b>Data Science (Automation) Intern: IBM</b>
+                	<ul>
+                		<li><i>May 2022-August 2022</i></li>
+                		<li>Project: Log Anomaly Detection and Resolution (LADR)</li>
+                	</ul>
+                </td>
+            </tr>
+			<tr>
+                <td><img src="Images/CZ-BioHub.png" alt="CZ BioHub Logo" height="100px" width="100px"></td>
+                <td><b>Data Science Intern/Contractor: Chan Zuckerberg BioHub</b>
+                	<ul>
+                		<li><i>June 2021-April 2022</i></li>
+                		<li>Project: ortho_seqs</li>
+                	</ul>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
 	<div class="container">
 		<h1>Skills</h1>
 		<ul class="list-group  list-group-flush">
@@ -48,17 +112,8 @@
 		<h1>Interests and Hobbies</h1>
 		<ul class="list-group  list-group-flush">
 			<li class="list-group-item list-group-item-info">Coding in Python. I'm serious.</li>
-			<li class="list-group-item">The history of science is <i>fascinating</i>.</li>
-			<li class="list-group-item list-group-item-info">Most songs with harmonic minor scales.</li>
 			<li class="list-group-item">College basketball (Virginia and NC State) and professional baseball (LA Dodgers).</li>
-			<li class="list-group-item list-group-item-info">Cooking the most passable food. <a href="./Documents/Recipe Book.pdf" target="_blank" rel="noopener noreferrer">Check out the most recent version of my recipe book.</a></li>
-			<li class="list-group-item">Slicing every ball I hit at Topgolf.</li>
-			<li class="list-group-item list-group-item-info">Playing Pok‌&#233mon (Gen IV and V have my childhood).</li>
-			<li class="list-group-item">Star Wars.</li>
-			<li class="list-group-item list-group-item-info">I'm <i>okay</i> at foosball (I will crush you).</li>
-			<li class="list-group-item">Hitting home runs in tennis.</li>
-			<li class="list-group-item list-group-item-info">Hitting home runs on the Wii.</li>
-			<li class="list-group-item">Some of my favorite shows include Brooklyn Nine-Nine, Avatar, and The Good Place.</li>
+			<li class="list-group-item list-group-item-info">I like to play foosball. I am also a past home run derby champion (in tennis).</li>
 		</ul>
 	</div>
 	<br>
@@ -74,10 +129,8 @@
 			<li class="list-group-item list-group-item-info">I underwent PRK surgery in May 2025 (<a href="https://my.clevelandclinic.org/health/procedures/photorefractive-keratectomy-prk-eye-surgery" target="_blank" rel="noopener noreferrer">What is PRK?</a>).</li>
 			<li class="list-group-item">My Cookout shake order is either strawberry and chocolate or Oreo and mocha.</li>
 			<li class="list-group-item list-group-item-info">I am mix-handed.</li>
-			<li class="list-group-item">Pineapple belongs on pizza.</li>
+			<li class="list-group-item">Pineapple belongs on pizza (and this is a fact).</li>
 			<li class="list-group-item list-group-item-info">My favorite color is <font color="#7800F0">purple</font>.</li>
-			<li class="list-group-item">I visited the Notre Dame cathedral the day it caught on fire.</li>
-			<li class="list-group-item list-group-item-info">I have perfect pitch.</li>
 		</ul>
 	</div>
 	<br><br>
