@@ -19,24 +19,28 @@
     body {
         top: 0px !important;
     }
+
+    /* Mobile Font Sizing (screens under 768px) */
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        h5, p, li {
+            font-size: 1.15rem;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.15rem;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    }
 </style>
-
-<nav class="navbar sticky-top navbar-dark bg-dark">
-    <div class="container-fluid d-flex flex-nowrap align-items-center justify-content-between">
-        <!-- Brand + Nav Links Group -->
-        <div class="d-flex align-items-center">
-            <a href="index.html" class="navbar-brand mr-3" id="nav-brand-title">Miles Woollacott</a>
-            
-            <div class="navbar-nav flex-row">
-                <a href="index.html" class="nav-item nav-link px-2" data-page="index.html">Home</a>
-                <a href="about-me.html" class="nav-item nav-link px-2" data-page="about-me.html">About</a>
-                <a href="research.html" class="nav-item nav-link px-2" data-page="research.html">Research</a>
-                <a href="teaching.html" class="nav-item nav-link px-2" data-page="teaching.html">Teaching</a>
-                <a href="contact.html" class="nav-item nav-link px-2" data-page="contact.html">Contact</a>
-            </div>
-        </div>
-
-        <!-- Google Translate Widget Container -->
-        <div id="google_translate_element" class="my-auto ml-auto"></div>
-    </div>
-</nav>
