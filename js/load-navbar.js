@@ -21,12 +21,6 @@ fetch('navbar.html')
             activeLink.classList.add('active');
         }
 
-        // Display current page title in brand link if not homepage
-        const brandTitle = document.getElementById('nav-brand-title');
-        if (brandTitle && currentPage !== 'index.html' && activeLink) {
-            brandTitle.textContent = activeLink.textContent;
-        }
-
         // Load Google Translate script dynamically after navbar HTML is inserted
         const translateScript = document.createElement('script');
         translateScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
