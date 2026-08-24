@@ -20,27 +20,51 @@
         top: 0px !important;
     }
 
-    /* Mobile Font Sizing (screens under 768px) */
+    /* Mobile Font Sizing & Spacing (screens under 768px) */
     @media (max-width: 768px) {
         body {
             font-size: 18px;
         }
-        h1 {
-            font-size: 2.2rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-        }
-        h5, p, li {
-            font-size: 1.15rem;
-        }
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.5rem; }
+        h5, p, li { font-size: 1.15rem; }
+
+        /* Mobile Dropdown Styling */
         .navbar-nav .nav-link {
-            font-size: 1.15rem;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
+            font-size: 1.25rem;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        #google_translate_element {
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
         }
     }
 </style>
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand Name -->
+        <a href="index.html" class="navbar-brand mr-3" id="nav-brand-title">Miles Woollacott</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mr-auto">
+                <a href="index.html" class="nav-item nav-link" data-page="index.html">Home</a>
+                <a href="about-me.html" class="nav-item nav-link" data-page="about-me.html">About</a>
+                <a href="research.html" class="nav-item nav-link" data-page="research.html">Research</a>
+                <a href="teaching.html" class="nav-item nav-link" data-page="teaching.html">Teaching</a>
+                <a href="contact.html" class="nav-item nav-link" data-page="contact.html">Contact</a>
+            </div>
+
+            <!-- Google Translate Widget Container -->
+            <div id="google_translate_element" class="my-auto ml-auto"></div>
+        </div>
+    </div>
+</nav>
