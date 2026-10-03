@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <title>CV - Miles Woollacott</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/My_Icon.png?v=2" type="image/png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="navbar-placeholder"></div>
+	<div style="background-color:rgb(120, 0, 240)" class="jumbotron text-center">
+        <br>
+        <h1 style="color:ivory">Curriculum Vitae</h1>
+        <br><br>
+    </div>
+	
+    <!-- PDF Viewer Section -->
+	<div class="container my-4">
+		<!-- Quick Action Bar -->
+		<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+			<div class="mb-2 mb-sm-0">
+				<h5 class="m-0 font-weight-bold text-secondary">
+					<i class="fas fa-file-pdf text-danger mr-2"></i>Miles_Woollacott_CV.pdf
+				</h5>
+			</div>
+			<div>
+				<a href="files/CV.pdf" target="_blank" class="btn btn-outline-dark mr-2">
+					<i class="fas fa-external-link-alt mr-1"></i> Open in New Tab
+				</a>
+				<a href="Documents/Miles_Woollacott_CV.pdf" download class="btn text-white" style="background-color: rgb(120, 0, 240);">
+					<i class="fas fa-download mr-1"></i> Download PDF
+				</a>
+			</div>
+		</div>
+
+		<!-- PDF Embed Container -->
+		<div class="card shadow-sm">
+			<div class="card-body p-0">
+				<object data="files/CV.pdf#toolbar=1&navpanes=0" type="application/pdf" width="100%" height="900px" style="min-height: 80vh; border: none;">
+					<!-- Fallback Content for devices/browsers that don't support inline PDF previews (e.g. mobile Safari/Chrome) -->
+					<div class="p-5 text-center">
+						<p class="lead mb-3">Your browser doesn't support embedding inline PDFs directly.</p>
+						<a href="files/CV.pdf" target="_blank" class="btn btn-lg text-white" style="background-color: rgb(120, 0, 240);">
+							<i class="fas fa-file-pdf mr-2"></i> Click Here to View or Download CV
+						</a>
+					</div>
+				</object>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+	
+	<!-- Loader Script and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/load-navbar.js?v=2"></script>
+</body>
+
+</html>
